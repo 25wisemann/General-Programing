@@ -94,7 +94,7 @@
 // 80-89 B
 // 90-100 A
 
-let TestGrade = 478
+let TestGrade = 5
 if (TestGrade <= 59){
     console.log('F');
 } else if (TestGrade <= 69){
@@ -103,6 +103,38 @@ if (TestGrade <= 59){
     console.log('C');
 } else if (TestGrade <= 89){
     console.log('B');
-} else if (TestGrade >= 90){
+} else {
     console.log('A');
 } 
+
+/* Logical Opperators:
+ modify or combine multiple logic statements
+ AND: &&  -> Will return true only when both statements are true
+ OR: ||   -> Will return true when either statment is true
+ NOT: !   -> Flips the true/false values
+ */
+
+ // A cholthing selector based on weather
+ // Two variables: Temp and Percipitation
+let temp = 80;
+let Percipitation = 1;
+
+/* List of options
+tshirt and pants (60-75)
+tshirt and short (>=75)
+long sleeve shirt and pants (>=45)
+sweatshirt and pants (<45)
+jacket (percipitation)
+*/
+
+if (temp >= 75 && Percipitation == 0){
+    console.log('shirt and shorts')
+} else if (temp >= 60 && Percipitation == 0){
+    console.log('Shirt and pants')
+} else if (temp >= 45 && Percipitation == 0){
+    console.log('Long sleeve shirt and pants') 
+} else if (temp < 45 && Percipitation == 0){
+    console.log('Sweatshirt and pants')
+} else if (temp >= 75 && Percipitation == 1){
+    console.log('Jacket and Shorts')
+} else console.log('Jacket and Pants')
