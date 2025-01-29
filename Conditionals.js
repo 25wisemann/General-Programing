@@ -94,18 +94,18 @@
 // 80-89 B
 // 90-100 A
 
-let TestGrade = 5
-if (TestGrade <= 59){
-    console.log('F');
-} else if (TestGrade <= 69){
-    console.log('D');
-} else if (TestGrade <= 79){
-    console.log('C');
-} else if (TestGrade <= 89){
-    console.log('B');
-} else {
-    console.log('A');
-} 
+// let TestGrade = 5
+// if (TestGrade <= 59){
+//     console.log('F');
+// } else if (TestGrade <= 69){
+//     console.log('D');
+// } else if (TestGrade <= 79){
+//     console.log('C');
+// } else if (TestGrade <= 89){
+//     console.log('B');
+// } else {
+//     console.log('A');
+// } 
 
 /* Logical Opperators:
  modify or combine multiple logic statements
@@ -137,4 +137,47 @@ if (temp >= 75 && Percipitation == 0){
     console.log('Sweatshirt and pants')
 } else if (temp >= 75 && Percipitation == 1){
     console.log('Jacket and Shorts')
-} else console.log('Jacket and Pants')
+} else console.log('Jacket and Pants');
+
+// You must restate variable each time
+
+/* Java script usees "truthy" and "falsy" values
+Truthy: Will be treated the same as true
+The following values are truthy:
+    True
+    Any not empty string ('Including false)
+    Any number other than 0
+    arrays
+    functions
+    objects
+
+The folowing values are falsey
+    False (not a string)
+    0 (number)
+    0n BigInt
+    empty string
+    null
+    undefined
+    not a number (NaN)
+
+OR -> finds the first truthy value:
+    for example:
+
+    let testVariable = null || 'banana' || 1 || false;
+    console.log(testVariable)
+
+    This will say 'banana'
+
+    let testVariable = null || 0 || undefined || false;
+    console.log(testVariable)
+
+    This will say 'false' (last falsey value)
+
+    This can be used if yo have a form that ust be filled out
+        let name = `${USER_INPUT}` || 'Unkown Name'
+    Can also be used to set up conditional alerts or functions
+
+        let PrintSuccess = true;
+        PrintSuccess || alert('DID NOT PRINT');
+        !PrintSuccess || alert('Printed Successfully);
+*/
