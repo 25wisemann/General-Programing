@@ -116,8 +116,8 @@
 
  // A cholthing selector based on weather
  // Two variables: Temp and Percipitation
-let temp = 80;
-let Percipitation = 1;
+// let temp = 80;
+// let Percipitation = 1;
 
 /* List of options
 tshirt and pants (60-75)
@@ -127,17 +127,17 @@ sweatshirt and pants (<45)
 jacket (percipitation)
 */
 
-if (temp >= 75 && Percipitation == 0){
-    console.log('shirt and shorts')
-} else if (temp >= 60 && Percipitation == 0){
-    console.log('Shirt and pants')
-} else if (temp >= 45 && Percipitation == 0){
-    console.log('Long sleeve shirt and pants') 
-} else if (temp < 45 && Percipitation == 0){
-    console.log('Sweatshirt and pants')
-} else if (temp >= 75 && Percipitation == 1){
-    console.log('Jacket and Shorts')
-} else console.log('Jacket and Pants');
+// if (temp >= 75 && Percipitation == 0){
+//     console.log('shirt and shorts')
+// } else if (temp >= 60 && Percipitation == 0){
+//     console.log('Shirt and pants')
+// } else if (temp >= 45 && Percipitation == 0){
+//     console.log('Long sleeve shirt and pants') 
+// } else if (temp < 45 && Percipitation == 0){
+//     console.log('Sweatshirt and pants')
+// } else if (temp >= 75 && Percipitation == 1){
+//     console.log('Jacket and Shorts')
+// } else console.log('Jacket and Pants');
 
 // You must restate variable each time
 
@@ -181,3 +181,113 @@ OR -> finds the first truthy value:
         PrintSuccess || alert('DID NOT PRINT');
         !PrintSuccess || alert('Printed Successfully);
 */
+
+/* 
+&& finds th first falsey value
+    Evaluates from left to right
+    converst vale to a boolean based on truthy/falseey values
+    stops when it gets to the first false value
+    if no falsey, returns last value
+*/
+
+// console.log(true && true && true);
+// console.log(true && 0 && true && true);
+// console.log(true && "false" && 5 && 3.14);
+
+// && has a higher Precedence than ||
+// (a && b || c && d) == (a && b) || (c && d)
+
+// DO NOT DO THIS. SERIOUSLY. DON'T. 
+// some poeple use && instead of if
+// let(z = 1)
+// (z > 0) && alert('x greater than zero!');
+
+/*
+! takes a single argument or value and does the following
+    1. converts the value to a boolian type
+    2. returns the opposit of the result of 1
+*/
+
+console.log(!NaN);
+console.log(!1);
+
+// Because of this ome pople will use !! to convert it to a boolian value
+
+console.log(!!NaN);
+
+// can also be done with Boolean()
+
+console.log(Boolean(false));
+
+/* if we have a lot of possible test cases we want to check it is better to use a switch than an if-else-if
+Basic structure:
+    Switch(expression){
+    case x:
+        code
+        break
+    case y:
+        code
+        break
+    case z:
+        code
+        break
+    default:
+        code
+    }
+
+The switch expression is evaluated
+the valuse of the expresion is compared with the values with each case
+If there is a match, the code for that case activates
+If no match default case activates
+*/
+
+// There is something called the git day method
+// Returns the week day as a number between 0 and 6
+// We'll use  aswitch to convert this output to an actual day
+
+let day
+
+switch(new Date().getDay()){
+    case 0:
+        day = 'sunday'
+        break
+    case 1:
+        day = 'monday'
+        break
+    case 2:
+        day = 'teusday'
+        break
+    case 3:
+        day ='wednesday'
+        break
+    case 4:
+        day = 'thursday'
+        break
+    case 5:
+        day = 'friday'
+        break
+    case 6:
+        day = 'saturday'
+        break
+    default:
+        console.log('Not a Date')
+}
+
+console.log(day)
+
+ console.log(console.log(1) && console.log(2));
+
+ let age = 70
+
+ if (age >= 14 && age <= 90){
+    console.log('yippe')
+ } else {
+    console.log('no Yip')
+ }
+
+ 
+ if (!(age >= 14 && age <= 90)){
+    console.log('yippe')
+ } else {
+    console.log('no Yip')
+ }
