@@ -29,3 +29,7 @@ function RandomLessThan(num){
 console.log(Math.random());
 
 console.log (RandomLessThan(100));
+
+// produc a number between one and four
+console.log(RandomLessThan(4) + 1)
+// IF YOU WANT A FUCTION TO INTERCT WITH SOMETHING ELSE YOU NEED A RETRUN VALUE
