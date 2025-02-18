@@ -129,9 +129,65 @@ Instead of ejecting out of the loop it just skips to the end of the current itte
 
 //Example: Print just odd numbers from 1 - 20
 
-for(let i = 0; i < 21; i++){
-    if (i % 2 == 0){
-        continue;
-    }
-    console.log(i);
-}
+// for(let i = 0; i < 21; i++){
+//     if (i % 2 == 0){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// Loops Pt2 AKA Arrays
+
+
+
+/* ARRAYS
+in programing an array is a collection of values
+Specifically it is an ordered collecton of values
+
+let ArrayName = [item1, item2, item3, item4];
+
+to make an empty array:
+    let FakeArray1 = new Array()
+
+    let FakeArray2 = [];
+*/
+
+let Fruits = ['Apples', 'Bannana', 'Cantalope', 'Durian', 'Leychess'];
+console.log (Fruits);
+console.log (Fruits [3])
+
+Fruits[3] = 'Watermellon'
+
+console.log (Fruits)
+
+// add strawberries
+
+Fruits[5] = 'Strawberry';
+
+console.log (Fruits);
+
+// finsout how many elements are in an array
+console.log (Fruits.length);
+
+// Add an element to the end
+Fruits[Fruits.length] = 'Dragonfruit'
+console.log (Fruits);
+
+Fruits[Fruits.length] = 'Blueberry'
+console.log (Fruits)
+
+/* An Array can store elements of any kind
+Including mixing types in the same array
+*/
+
+let ExampleArray = ['Apple', 34, true, function () {console.log('hello')}, 'Array']
+console.log (ExampleArray)
+
+// do math with the values in an array
+// Function to calculate distance between points on the x-y array
+
+let obj1 = [3, 5];
+let obj2 = [7, 11];
+
+let distance = Math.sqrt((obj2[0] - obj1[0])**2 + (obj2[1] - obj1[1])**2)
+console.log(distance)
