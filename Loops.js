@@ -152,42 +152,111 @@ to make an empty array:
     let FakeArray2 = [];
 */
 
-let Fruits = ['Apples', 'Bannana', 'Cantalope', 'Durian', 'Leychess'];
-console.log (Fruits);
-console.log (Fruits [3])
+// let Fruits = ['Apples', 'Bannana', 'Cantalope', 'Durian', 'Leychess'];
+// console.log (Fruits);
+// console.log (Fruits [3])
 
-Fruits[3] = 'Watermellon'
+// Fruits[3] = 'Watermellon'
 
-console.log (Fruits)
+// console.log (Fruits)
 
-// add strawberries
+// // add strawberries
 
-Fruits[5] = 'Strawberry';
+// Fruits[5] = 'Strawberry';
 
-console.log (Fruits);
+// console.log (Fruits);
 
-// finsout how many elements are in an array
-console.log (Fruits.length);
+// // finsout how many elements are in an array
+// console.log (Fruits.length);
 
-// Add an element to the end
-Fruits[Fruits.length] = 'Dragonfruit'
-console.log (Fruits);
+// // Add an element to the end
+// Fruits[Fruits.length] = 'Dragonfruit'
+// console.log (Fruits);
 
-Fruits[Fruits.length] = 'Blueberry'
-console.log (Fruits)
+// Fruits[Fruits.length] = 'Blueberry'
+// console.log (Fruits)
 
-/* An Array can store elements of any kind
-Including mixing types in the same array
-*/
+// /* An Array can store elements of any kind
+// Including mixing types in the same array
+// */
 
-let ExampleArray = ['Apple', 34, true, function () {console.log('hello')}, 'Array']
-console.log (ExampleArray)
+// let ExampleArray = ['Apple', 34, true, function () {console.log('hello')}, 'Array']
+// console.log (ExampleArray)
 
-// do math with the values in an array
-// Function to calculate distance between points on the x-y array
+// // do math with the values in an array
+// // Function to calculate distance between points on the x-y array
 
-let obj1 = [3, 5];
-let obj2 = [7, 11];
+// let obj1 = [3, 5];
+// let obj2 = [7, 11];
 
-let distance = Math.sqrt((obj2[0] - obj1[0])**2 + (obj2[1] - obj1[1])**2)
-console.log(distance)
+// let distance = Math.sqrt((obj2[0] - obj1[0])**2 + (obj2[1] - obj1[1])**2)
+// console.log(distance)
+
+// let primes = [2, 3, 5, 7, 11, 13, 17, 19]
+// let i = 0
+// while (i < primes.length){
+//     console.log(primes[i]);
+//     i++;
+// } 
+
+// console.log (primes.at(-1));
+
+// Array methods
+
+//  .pop() - finds the last element of the array, returns it, and deletes it from the array
+
+// console.log(primes)
+// console.log(primes.pop())
+// console.log(primes)
+
+// find sum of all primes under 20
+
+// let sum = 0
+// while (primes.length){
+//     sum += primes.pop()
+//     console.log(primes)
+// }
+// console.log(sum)
+
+// the opposite of .pop() is .push()
+// .push() adds an element to the end of the array
+
+let fruits = ['Apples', 'Bannana', 'Cantalope', 'Durian', 'Leychess'];
+
+fruits.push('wattermellon');
+
+console.log(fruits);
+
+// the problem with these two is that you can only modiffy the end of the array
+// Different methods are needed for the begining of the array
+
+// .shift() - .pop() but at the begining
+
+console.log(fruits.shift());
+console.log(fruits);
+
+// .unshift() - .push() but at the start
+
+fruits.unshift('Appricot');
+console.log(fruits);
+
+// push and unshift can add multiple elements at once
+
+fruits.unshift('Oranges', 'Lemons');
+console.log(fruits);
+
+fruits.push('Apple', 'Peach');
+console.log(fruits);
+
+// using loops with arrays.
+// Here's an old style of printing all the array values
+
+// for (let i = 0; i < fruits.length; i++){
+//     console.log(fruits[i])
+// }
+
+//there is a different kind of way to do it, with a for ... of loop:
+
+for ( let fruit of fruits) {
+console.log(fruit)
+}
