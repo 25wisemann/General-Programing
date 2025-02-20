@@ -221,32 +221,32 @@ to make an empty array:
 // the opposite of .pop() is .push()
 // .push() adds an element to the end of the array
 
-let fruits = ['Apples', 'Bannana', 'Cantalope', 'Durian', 'Leychess'];
+// let fruits = ['Apples', 'Bannana', 'Cantalope', 'Durian', 'Leychess'];
 
-fruits.push('wattermellon');
+// fruits.push('wattermellon');
 
-console.log(fruits);
+// console.log(fruits);
 
 // the problem with these two is that you can only modiffy the end of the array
 // Different methods are needed for the begining of the array
 
 // .shift() - .pop() but at the begining
 
-console.log(fruits.shift());
-console.log(fruits);
+// console.log(fruits.shift());
+// console.log(fruits);
 
-// .unshift() - .push() but at the start
+// // .unshift() - .push() but at the start
 
-fruits.unshift('Appricot');
-console.log(fruits);
+// fruits.unshift('Appricot');
+// console.log(fruits);
 
-// push and unshift can add multiple elements at once
+// // push and unshift can add multiple elements at once
 
-fruits.unshift('Oranges', 'Lemons');
-console.log(fruits);
+// fruits.unshift('Oranges', 'Lemons');
+// console.log(fruits);
 
-fruits.push('Apple', 'Peach');
-console.log(fruits);
+// fruits.push('Apple', 'Peach');
+// console.log(fruits);
 
 // using loops with arrays.
 // Here's an old style of printing all the array values
@@ -257,6 +257,37 @@ console.log(fruits);
 
 //there is a different kind of way to do it, with a for ... of loop:
 
-for ( let fruit of fruits) {
-console.log(fruit)
-}
+// for ( let fruit of fruits) {
+// console.log(fruit)
+// }
+
+/* one thing to note about arrays
+the array.length value returns the value of the las index + 1
+It is not counting how many values are in the array
+*/
+
+// let grades = [71, 89, 65, 56, 31, 100, , 0, 89, 100];
+// console.log(grades);
+// console.log(grades.length);
+
+// let BadArray = [];
+// BadArray[314] = 'pie';
+// console.log(BadArray.length);
+// console.log (BadArray);
+
+/* Multi Dimensional Arrays
+An array made up of multiple arrays*/
+// An array holding x,y coordinate of 5 points
+//(3,4), (1,2), (9,15), (37,11), (215,1)
+let coordinates = [
+    [3,4],
+    [1,2],
+    [9,15],
+    [37,11],
+    [215,1]
+ ]
+console.log(coordinates);
+console.log(coordinates[4]);
+console.log(coordinates[4][0]);
+coordinates[4][0] = 21
+console.log(coordinates[4][0]);
