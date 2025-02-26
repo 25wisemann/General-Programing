@@ -30,8 +30,36 @@
 // }
 
 //4
-while(true){
-    let value = [+prompt('Input number', '')]
+// let sum = 0
+// let inputs = []
+// let value = 1
+// while(value){
+//     let value = Number(prompt('Input number', ''))
+
+//     // if (!value && value != "0"){
+//     if (!value){ 
+//         if (value === 0){
+//             continue
+//         }else{
+//             break
+//         }
+//     }
+//     if (value){
+//         inputs.push(value)
+//     }
 
 
-}
+//     sum += value
+// }
+// console.log(sum)
+
+// 5
+
+styles = ['Jazz', 'Blues']
+styles.push('Rock and Roll')
+console.log (styles)
+styles[(styles.length - 1) / 2] = 'Classics'
+console.log(styles)
+console.log(styles.shift())
+styles.unshift('Rap and Reggane')
+console.log(styles)
