@@ -291,3 +291,89 @@ console.log(coordinates[4]);
 console.log(coordinates[4][0]);
 coordinates[4][0] = 21
 console.log(coordinates[4][0]);
+
+/* Methods are fnctions tied to a dattype
+
+e.g. arr.pop() is the pop method
+
+-We've learned 4 array methods: pop, shift, push, unshift
+- arr.length is not technically a method due to lack of ()
+arr.at() works like [] notation, but utilizes negatives
+ex: arr = [a,b,c,d,e,f,g] => arr.at(-2) => f
+
+NEW ARRAY METHODs:
+.join()
+    allow you to combine the terms of an array into a string
+    You can specify the seperator
+
+example:
+
+let arrayForStrig = ['A', 'B', 'C', 'D']
+console.log(arrayForStrig.join()) // Single string with commas
+console.log(arrayForStrig.join('o.O')) // o.O relplaces the comma
+
+concat() => concatenate, combine arrays
+ Example:
+
+let MikesSons = ['Greg', 'Peter', 'Bobby']
+let CarolsDaughters = ['Marcia', 'Jan', 'Cindy']
+
+let BradyBunch = MikesSons.concat(CarolsDaughters)
+console.log(BradyBunch)
+
+Finally:
+ .Splice() and .Slice()
+
+ .Splice() adds new items to the array
+ .Slice() removes  piece of an array
+
+Example:*/
+
+let fruits = ['Apple', 'Oranage', 'Apple', 'Kiwi']
+fruits.splice(2,0, 'Mango', 'Papaya')
+console.log(fruits)
+
+// .splice(targetIndex, How many items to remove after the insertion, Stuff to be added)
+
+// You can acctually use splice to delete items from the middle of an array
+
+fruits.splice(4,1)
+console.log(fruits)
+
+// .slice() Returns a new array from a section, or slice of an old array
+
+let fruitsILike = [fruits.slice(1,5)]
+console.log(fruitsILike)
+
+// .slice(Index to start, Index to end but not use)
+
+
+/* strings behave a lot like arrays and have some simmilar methods
+
+strings.length => length of string
+
+*/
+ 
+let alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+console.log(alpha.charAt(2));
+console.log(alpha.at(7));
+console.log(alpha[12]);
+
+/* .at() allows negative indeces
+If you put something in that doesnt exist, like: 
+alpha[28] => Undefined
+alpha.carAt => ''
+
+ALSO: observe this example */
+
+alpha[1] = 'Q'
+console.log(alpha) // [] are read only, can not change
+
+/* 3 methods to remove parts of a string
+
+.Splice( start, end)
+.substring( start value, end value)
+    values les than 0 are treaed as zero
+If end value is left out of either of these it goes to the end of the string
+
+.substr(start, length)
