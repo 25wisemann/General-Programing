@@ -55,11 +55,11 @@
 
 // 5
 
-styles = ['Jazz', 'Blues']
-styles.push('Rock and Roll')
-console.log (styles)
-styles[(styles.length - 1) / 2] = 'Classics'
-console.log(styles)
-console.log(styles.shift())
-styles.unshift('Rap and Reggane')
-console.log(styles)
+// styles = ['Jazz', 'Blues']
+// styles.push('Rock and Roll')
+// console.log (styles)
+// styles[(styles.length - 1) / 2] = 'Classics'
+// console.log(styles)
+// console.log(styles.shift())
+// styles.unshift('Rap and Reggane')
+// console.log(styles)
