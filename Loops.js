@@ -376,4 +376,23 @@ console.log(alpha) // [] are read only, can not change
     values les than 0 are treaed as zero
 If end value is left out of either of these it goes to the end of the string
 
-.substr(start, length)
+.substr(start, length)*/
+
+// let testString = 'the quick brown fox jumped over the lazy dog'
+
+// let string1 = testString.slice(3,10)
+// let string2 = testString.substring(3,10)
+// let string3 = testString.substr(3,10)
+
+// console.log(string1)
+// console.log(string2)
+// console.log(string3)
+
+/* two more method
+.toUpperCase() -> Makes string all uppercase
+.toLowerCase() -> Makes string all lowercase
+*/
+
+let testString2 ='THe QuicK BROwn fOx JUMped OVeR The LaZy DOg'
+
+console.log(testString2.toLowerCase())
