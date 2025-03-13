@@ -396,3 +396,4 @@ If end value is left out of either of these it goes to the end of the string
 let testString2 ='THe QuicK BROwn fOx JUMped OVeR The LaZy DOg'
 
 console.log(testString2.toLowerCase())
+
