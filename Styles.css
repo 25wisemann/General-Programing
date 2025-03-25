@@ -1,0 +1,65 @@
+/* This is a comment */
+
+/* Heres and example css rule:
+
+div.bold-text {
+    font-weight: 700;
+    }
+
+selector {
+    property: value;
+    }
+
+<dif> is an HTML element like <p> or <h#>
+
+<dif> dosent carry extra rules with it like <p> and <h>
+<dif> is just an empty container
+
+* is the universal selector Ex:
+
+*/
+
+/* * {
+    color: violet;
+}
+
+h1 {
+    color: purple
+}
+
+.sad {
+    font-size: xx-small;
+    color:lightseagreen
+} */
+
+.Edmund {
+    color:red;
+}
+.Kent{
+    color: rgb(192, 169, 41);
+}
+
+.Lear{
+    color:maroon;
+}
+
+.Gloucester{
+    color: rgb(64, 168, 64);
+}
+
+#Arogant {
+    font-size:xx-large
+}
+
+#top-of-page {
+    font-style:oblique
+}
+
+.royal{
+    font-style:italic;
+}
+/* 
+as a rule you want to avoid id selectors, they can only be used once per page,
+and each element can only have one id
+In general you wan to ue classes, because they can be repeated and can be assigned more than one element
+*/
