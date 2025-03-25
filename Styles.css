@@ -32,7 +32,7 @@ h1 {
     color:lightseagreen
 } */
 
-.Edmund {
+/* .Edmund {
     color:red;
 }
 .Kent{
@@ -57,9 +57,61 @@ h1 {
 
 .royal{
     font-style:italic;
-}
+} */
 /* 
 as a rule you want to avoid id selectors, they can only be used once per page,
 and each element can only have one id
 In general you wan to ue classes, because they can be repeated and can be assigned more than one element
 */
+
+
+/* working with multiple classes:
+We have shown we can give an element multiple classes 
+Once we have multiple lements that share classes we can do an interseting thing */
+
+/*
+Important - text red and italic
+read - font size small
+unread - font style itallic, back grund colour yellow
+*/
+
+/* Traditional approach
+.important {
+    color:navy;
+    font-style:italic;
+}
+
+.read{
+    font-size:small;
+    color:#FF69b4
+}
+
+.unread{
+    font-style:italic;
+    background-color: yellow;
+}
+*/
+
+/*more steamlined/fancy*/
+
+.important,
+.read{
+    font-style:italic;
+}
+
+.important {
+    color:navy;
+}
+
+.read{
+    font-size:small;
+    color:#FF69b4
+}
+
+.unread{
+    background-color: yellow;
+}
+
+.read.important{
+    color:blueviolet;
+}
