@@ -94,7 +94,7 @@ unread - font style itallic, back grund colour yellow
 
 /*more steamlined/fancy*/
 
-.important,
+/* .important,
 .read{
     font-style:italic;
 }
@@ -114,4 +114,24 @@ unread - font style itallic, back grund colour yellow
 
 .read.important{
     color:blueviolet;
+} */
+
+
+
+.pitchers{
+    color:red;
+    background-color: white;
+}
+
+.position-players{
+    color: white;
+    background-color: red;
+}
+
+.outfielder{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.position-players .outfielder{
+    font-style: italic;
 }
