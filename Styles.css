@@ -135,3 +135,27 @@ unread - font style itallic, back grund colour yellow
 .position-players .outfielder{
     font-style: italic;
 }
+
+.starters{
+    font-weight: 800;
+    text-align: center;
+}
+
+.relievers{
+    font-weight: 300;
+    text-align: right;
+}
+
+.infielder{
+    text-align: center;
+}
+
+/*  Change how lists are viewd*/
+
+li:before {
+    content: ' ';
+}
+
+ul{
+    list-style: none;
+}
