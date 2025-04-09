@@ -116,7 +116,9 @@ unread - font style itallic, back grund colour yellow
     color:blueviolet;
 } */
 
-
+/* *{
+    outline: 2px solid yellow;
+}
 
 .pitchers{
     color:red;
@@ -151,11 +153,36 @@ unread - font style itallic, back grund colour yellow
 }
 
 /*  Change how lists are viewd*/
-
+/*
 li:before {
     content: ' ';
 }
 
 ul{
     list-style: none;
+} 
+*/
+
+.flex-contain{
+    display: flex;
+    height: 300px;
+    padding: 16px;
+    border: 4px solid orange;
+    background: purple;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    /* flex-direction: column; */
+}
+
+.flex-contain div{
+    background-color: palevioletred;
+    border: 4px, solid #c2191f;
+    width: 60px;
+    height: 60px;
+    /* flex: 1; */
+}
+
+.flex-contain .two {
+    /* flex-shrink: 0; */
 }
